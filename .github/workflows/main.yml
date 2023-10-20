@@ -2,15 +2,15 @@ on:
   push:
     branches:
     - main
-jobs: 
+jobs:
   deploy:
     name: deploy to firebase
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - uses: actions/setup-node@master
       with:
-        node-version: '10.x'
+        node-version: '18.x'
     - run: npm install
     - run: npm run build --prod
     - uses: w9jds/firebase-action@master
