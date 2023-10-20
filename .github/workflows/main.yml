@@ -17,4 +17,4 @@ jobs:
       with:
         args: deploy --only hosting
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_OWEN_TIMER }}
+        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_OWEN_TIMER }}
