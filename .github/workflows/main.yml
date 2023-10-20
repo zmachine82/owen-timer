@@ -12,7 +12,6 @@ jobs:
       with:
         node-version: '18.x'
     - run: npm install
-    - run: npm run build --prod
     - uses: FirebaseExtended/action-hosting-deploy@v0
       with:
         repoToken: "${{ secrets.GITHUB_TOKEN }}"
