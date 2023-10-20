@@ -1,0 +1,20 @@
+<div id="container">
+
+  <div id="buttons">
+    <button class="start" (click)="startWorkout()">Start</button>
+    <button class="stop" (click)="stopWorkout()">Stop</button>
+    <button class="pause" (click)="pauseWorkout()">Pause</button>
+  </div>
+
+  <!-- display rep status -->
+  <div id="repStatus">
+    Rep: {{currentRep}}/{{totalReps}}
+  </div>
+
+
+  <!-- display time left in current rep -->
+  <div id="currentRepTime">
+    {{currentRepTime}}
+    <!--  -->
+  </div>
+</div>
