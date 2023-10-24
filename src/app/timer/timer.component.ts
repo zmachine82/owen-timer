@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SpeechService } from '../speech.service';
+import { TimerService } from '../timer.service';
 
 @Component({
   selector: 'app-timer',
@@ -9,15 +10,15 @@ import { SpeechService } from '../speech.service';
 export class TimerComponent {
 
   currentRep = 1
-  totalReps = 10
-  onCycleTime = 30
-  offCycleTime = 10
+  totalReps = this.timerService.totalReps
+  onCycleTime = this.timerService.onCycleTime
+  offCycleTime = this.timerService.offCycleTime
   currentRepTime = this.onCycleTime;
   currentlyOnTheOnCycle = true;
   interval?: NodeJS.Timeout;
 
-  constructor(private speechService: SpeechService) {
-
+  constructor(private speechService: SpeechService, private timerService: TimerService) {
+    
   }
 
   startWorkout() {
