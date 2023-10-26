@@ -1,13 +1,18 @@
-<form  >
-  <label for="totalReps">Total Reps</label>
-  <input (ngModelChange)="onChange()" [(ngModel)]="timerService.totalReps" type="number" name="totalReps" id="totalReps">
-  <br>
-  <label for="onCycleTime">On Cycle</label>
-  <input (ngModelChange)="onChange()" [(ngModel)]="timerService.onCycleTime" type="number" name="onCycleTime" id="onCycleTime">
-<br>
-  <label for="offCycleTime">Off Cycle</label>
-  <input (ngModelChange)="onChange()" [(ngModel)]="timerService.offCycleTime" type="number" name="offCycleTime" id="offCycleTime">
+<div>
+  <form>
+    <label for="totalReps">Total Reps </label>
+    <input (ngModelChange)="onChange()" [(ngModel)]="timerService.totalReps" type="number" name="totalReps"
+      id="totalReps">
+    <br>
+    <label for="onCycleTime">On Cycle </label>
+    <input (ngModelChange)="onChange()" [(ngModel)]="timerService.onCycleTime" type="number" name="onCycleTime"
+      id="onCycleTime">
+    <br>
+    <label for="offCycleTime">Off Cycle </label>
+    <input (ngModelChange)="onChange()" [(ngModel)]="timerService.offCycleTime" type="number" name="offCycleTime"
+      id="offCycleTime">
 
-<br>
-  <button type="button" (click)="timerService.resetToDefaults()">Reset</button>
-</form>
+    <br>
+    <button type="button" (click)="timerService.resetToDefaults()">Reset</button>
+  </form>
+</div>
