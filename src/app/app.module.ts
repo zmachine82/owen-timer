@@ -7,13 +7,15 @@ import { TimerComponent } from './timer/timer.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { LogComponent } from './log/log.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
     ConfigurationComponent,
-    HeaderComponent
+    HeaderComponent,
+    LogComponent
   ],
   imports: [
     BrowserModule,
