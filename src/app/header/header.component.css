@@ -1,16 +1,29 @@
 .container {
   height: 64px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .item {
   height: 64px;
-  width: 64px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(22, 90, 113);
+  color: white;
+}
+
+.item div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
-  margin: 8px 100px 8px 8px;
+  height: 18px;
+}
+
+.active {
+  background-color: rgb(86, 148, 169);
 }

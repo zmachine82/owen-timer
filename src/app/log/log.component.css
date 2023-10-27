@@ -1,0 +1,21 @@
+p {
+  display: flex;
+  border-bottom: solid 1px black;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin: 0;
+}
+span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+p:nth-child(even) {
+  background-color: lightgray;
+}
+.header {
+  font-weight: 800;
+}

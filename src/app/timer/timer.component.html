@@ -6,15 +6,11 @@
     <button class="pause" (click)="pauseWorkout()">Pause</button>
   </div>
 
-  <!-- display rep status -->
   <div id="repStatus">
     Rep: {{currentRep}}/{{totalReps}}
   </div>
 
-
-  <!-- display time left in current rep -->
-  <div id="currentRepTime">
+  <div id="currentRepTime" [ngStyle]="{color: currentlyOnTheOnCycle ? 'green' : 'red'}">
     {{currentRepTime}}
-    <!--  -->
   </div>
 </div>
